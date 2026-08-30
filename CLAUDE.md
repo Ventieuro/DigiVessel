@@ -73,7 +73,10 @@ Aprire il progetto: Arduino IDE -> File -> Open -> `firmware/DigiVessel/DigiVess
 ## Roadmap
 
 1. [in corso] Installare Arduino IDE + supporto ESP32 + librerie OLED.
-   - [FATTO] Arduino IDE 2.3.10 installato (Windows, via winget `ArduinoSA.IDE.stable`).
+   Arduino IDE va installato su OGNI macchina separatamente (non viaggia col repo).
+   - [FATTO — solo PC Windows] Arduino IDE 2.3.10 installato via winget:
+     `winget install --id ArduinoSA.IDE.stable`
+   - [DA FARE — Mac] installare Arduino IDE 2.x da arduino.cc o `brew install --cask arduino-ide`.
    - [DA FARE] Boards Manager: pacchetto "esp32 by Espressif Systems".
    - [DA FARE] Library Manager: `Adafruit SSD1306` + `Adafruit GFX Library`.
    - [DA FARE] Verify dello sketch 01 (compila senza hardware collegato).
