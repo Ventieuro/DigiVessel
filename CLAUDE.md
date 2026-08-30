@@ -73,8 +73,12 @@ Aprire il progetto: Arduino IDE -> File -> Open -> `firmware/DigiVessel/DigiVess
 ## Roadmap
 
 1. [in corso] Installare Arduino IDE + supporto ESP32 + librerie OLED.
-2. [FATTO, da testare su device] Sketch 01: variabile `fame` che cala nel tempo,
-   stampata sul Serial Monitor. Nessun hardware oltre all'ESP32.
+   - [FATTO] Arduino IDE 2.3.10 installato (Windows, via winget `ArduinoSA.IDE.stable`).
+   - [DA FARE] Boards Manager: pacchetto "esp32 by Espressif Systems".
+   - [DA FARE] Library Manager: `Adafruit SSD1306` + `Adafruit GFX Library`.
+   - [DA FARE] Verify dello sketch 01 (compila senza hardware collegato).
+2. [FATTO, da testare su device il ~2026-09-01] Sketch 01: variabile `fame` che cala
+   nel tempo, stampata sul Serial Monitor. Nessun hardware oltre all'ESP32.
 3. Disegnare sull'OLED reale una volta collegato.
 4. Refactor in moduli: `PetState`, `Display`, `Input` (file separati nella cartella dello sketch).
    Poi, in ordine: interazione pulsanti (mangia / gioca / pulisci), sistema di evoluzione,
