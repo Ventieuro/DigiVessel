@@ -31,4 +31,4 @@ Funziona identico su Windows e su Mac: il codice e' Arduino/C++ puro, nessuna di
 
 | Sketch | Stato | Descrizione |
 |--------|-------|-------------|
-| 01 — Battito base | in test | La variabile `fame` cala nel tempo e viene stampata sul Serial Monitor. Nessun hardware oltre all'ESP32. |
+| 01 — Battito base | scritto; Verify non ancora eseguito; test su device previsto ~2026-09-01 | La variabile `fame` cala nel tempo e viene stampata sul Serial Monitor. Nessun hardware oltre all'ESP32. |

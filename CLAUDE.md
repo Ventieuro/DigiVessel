@@ -14,9 +14,11 @@ Questo file da' a Claude Code il contesto del progetto su qualsiasi macchina. Te
 
 Sviluppo su **due macchine**: un PC Windows 11 e un Mac.
 - Il codice e' Arduino/C++ puro: nessuna dipendenza dal sistema operativo.
-- Unica differenza pratica: nome della porta seriale.
-  - Windows: `COM3` (o simile)
-  - Mac: `/dev/cu.SLAB_USBtoUART` (o simile)
+- Unica differenza pratica: nome della porta seriale. Per scoprirlo:
+  - Windows: `COM3` (o simile) — vedi Gestione dispositivi, sezione "Porte (COM e LPT)".
+  - Mac: elenca con `ls /dev/cu.*`. Con il CP2102 su macOS recenti la porta compare
+    di solito come `/dev/cu.usbserial-XXXX`; se hai installato il driver SiLabs VCP
+    puo' invece chiamarsi `/dev/cu.SLAB_USBtoUART`.
 
 ### Sincronizzazione tra le due macchine
 
@@ -47,8 +49,8 @@ firmware/
     DigiVessel.ino      sketch principale (la cartella DEVE avere lo stesso nome del .ino)
     ...                  futuri moduli .h/.cpp accanto al .ino
   README.md
-docs/                    note di progetto, decisioni
-assets/sprites/          grafica per l'OLED
+docs/                    note di progetto, decisioni (vedi docs/README.md)
+assets/sprites/          grafica per l'OLED (vedi assets/sprites/README.md)
 ```
 
 ## Toolchain
